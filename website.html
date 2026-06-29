@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <style>
+        .navbar{
+            background-color: black;
+            height: 130px;
+            width: 100%;
+            align-items: center;
+
+        
+        }
+        .wel{
+            background-color: grey;
+            height: 200px;
+            text-align: center;
+            padding-top: 60px;
+            padding-bottom: 50px;
+        }
+
+        body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 40px;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      padding-bottom: 30px;
+    }
+
+    .container {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap; /* allows wrapping on smaller screens */
+      justify-content: center;
+    }
+
+    .box {
+      width: 220px;
+      height: 300px;
+      background-color: white;
+      border: 2px solid #ddd;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: all 0.3s ease;
+      overflow: hidden;
+    }
+
+    .box:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+    }
+
+    .box img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .box button {
+      margin-top: 15px;
+      padding: 10px 20px;
+      background-color: black;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .box button:hover {
+      background-color: #444;
+    }
+
+
+
+
+
+
+
+    /* ✅ Base layout styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+/* ✅ Make all images responsive */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ✅ Container for flexible layouts */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ✅ Responsive box grid (like your sofa boxes) */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Each box */
+.box {
+  flex: 1 1 250px; /* grow, shrink, base width */
+  max-width: 280px;
+  background-color: white;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+}
+
+/* ✅ Responsive buttons */
+button {
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* ✅ Responsive typography */
+h1, h2, h3, p {
+  word-wrap: break-word;
+}
+
+/* 📱 Small screens (mobile) */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .box {
+    max-width: 90%;
+  }
+}
+
+/* 💻 Medium screens (tablets) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .box {
+    flex: 1 1 45%;
+  }
+}
+
+/* 🖥️ Large screens (desktop) */
+@media (min-width: 1025px) {
+  .box {
+    flex: 1 1 22%;
+  }
+}
+
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="navbar" >
+    <a class="navbar-brand" href="#"><h1 style="color: white; padding: 20px 20px 5px 20px;"><span><b>Moiz</b></span></h1></a> 
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+   
+
+    <div class="collapse navbar-collapse" id="navbarNav" style="text-align: justify; justify-content: center; display: flex; gap: 0px ; padding: 10px 0; ">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="website.html" style="color: white;">Products</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="home.html" style="color: white; padding-left: 200px; ">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="login.html" style="color: white;padding-left: 200px;">Shop In</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="wel">
+    <h1 style="color: white;">WELCOME TO MY SHOP</h1>
+    <p style="color: white;">Your one-stop store for everything </p>
+</div>
+
+    
+ <p style="color: blue; text-decoration: underline; text-align: center; padding-bottom: 20px; padding-top: 20px;">Featured Products</p>
+  <div class="container">
+   
+    <div class="box">
+      <img src="./bed.jfif" alt="Sofa 1">
+      <button>Shop Now</button>
+    </div>
+    <div class="box">
+      <img src="./chair.jfif" alt="Sofa 2">
+      <button>Shop Now</button>
+    </div>
+    <div class="box">
+      <img src="./dining.jfif" alt="Sofa 3">
+      <button>Shop Now</button>
+    </div>
+    <div class="box">
+      <img src="./images.jfif" alt="Sofa 4">
+      <button>Shop Now</button>
+    </div>
+    
+  </div>
+
+
+    <div class="container">
+   
+    <div class="box">
+      <img src="./set.jfif" alt="Sofa 1">
+      <button>Shop Now</button>
+    </div>
+    <div class="box">
+      <img src="./side table.jfif" alt="Sofa 2">
+      <button>Shop Now</button>
+    </div>
+    <div class="box">
+      <img src="./sofa.jfif" alt="Sofa 3">
+      <button>Shop Now</button>
+    </div>
+    <div class="box">
+      <img src="./table.jfif" alt="Sofa 4">
+      <button>Shop Now</button>
+    </div>
+    
+  </div>
+
+
+
+   <div class="container">
+   
+    <div class="box">
+      <img src="./sofalamp.jfif" alt="Sofa 1">
+      <button>Shop Now</button>
+    </div>
+    <div class="box">
+      <img src="./lm.jfif" alt="Sofa 2">
+      <button>Shop Now</button>
+    </div>
+    <div class="box">
+      <img src="./lamp.jfif" alt="Sofa 3">
+      <button>Shop Now</button>
+    </div>
+    <div class="box">
+      <img src="./tv.jfif" alt="Sofa 4">
+      <button>Shop Now</button>
+    </div>
+    
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
